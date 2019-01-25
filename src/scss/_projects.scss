@@ -1,0 +1,99 @@
+.portfolio {
+    min-height: 100vh;
+    background-image: url("../img/bg3b.jpg"); 
+    background-size: cover;
+    background-position: top;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 4%;
+        color: rgb(255, 176, 0);
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 0 0 100%; 
+    padding: 5%;
+    margin: 0 auto;
+    @media all and(min-width: 760px){
+        flex: 0 0 50%;
+    }
+    @media all and(min-width: 1125px){
+        flex: 0 0 30%;
+    }
+}
+
+.imgBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox img {
+    height: 60%;
+    width: 80%;
+    border-radius: 10px;
+    @media all and(min-width: 1125px){
+        width: 15rem;
+    }
+}
+
+.box:hover .imgBox img {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+
+.details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 20px;
+    right: 5px;
+    background:  #FFAEBE;
+    border-radius: 10px;
+    transform: scaleY(0);
+    transition: transform .5s;
+    width: 75%;
+    @media all and(min-width: 1125px){
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.box:hover .details {
+    transform: scaleY(1);
+}
+
+.contentBox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+   
+}
+
+.contentBox h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: rgb(255, 176, 0);
+    text-transform: uppercase;
+    @media all and(min-width: 760px){
+        font-size: 1rem;
+    }
+}
+
+.contentBox p {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: .8rem;
+    @media all and(min-width: 760px){
+        margin: 0;
+        font-size: .8rem;
+    }
+}
+

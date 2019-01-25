@@ -1,0 +1,73 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("../img/bg1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.headerContent {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1, h2 {
+            color: white;
+        @media all and(min-width: 760px){
+            font-size: 3rem;
+            }
+        }
+    }
+
+.headerContentScroll {
+    background: url("../img/bg1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.headerText {
+        h4 {
+            padding: 2%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            @media all and(min-width: 760px){
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+.advText {
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding: 2%;
+}
+
+.advPart1, .advPart2{
+    @media all and(min-width: 915px){
+        display: flex;
+    }
+}
+
+.advText p {
+    @media all and(min-width: 915px){
+        font-size: 1.5rem;
+    }
+}
+
+.advText h3 {
+    @media all and(min-width: 760px){
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,169 @@
+.backgroundAbout {
+    display: none; 
+}
+
+@media screen and (min-width: 800px) {
+    .flexAbout{
+        display: flex;
+        flex-direction: row;
+    }
+
+.backgroundAbout {
+    display: block;
+    width: 40%;
+    min-height: 100vh;
+    background-image: url("../img/bg2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.aboutMeBox{
+    min-height: 100vh;
+    align-items: flex-end;
+    }
+    
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    left: 0;
+    background-color: white;
+}
+
+.aboutMeBox {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    text-align: center;
+}
+.aboutMeImg {
+    text-align: center;
+    content: url("../img/foto.jpg");
+    -webkit-clip-path: inset(5% 0 13% 13%);
+    clip-path: inset(5% 0 13% 13%);
+    height: 300px;
+    width: 400px;    
+    }
+
+.aboutMeText {
+    text-align: left;
+    }
+
+
+.mySkills {
+    min-height: 100vh;
+    min-width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFAEBE;
+    h2 { 
+        padding-top: 4%;
+        text-align: center;
+        }
+    }
+
+.skills {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+        li {
+        margin: 2em 0;
+        list-style-type: none;
+        @media all and(min-width: 800px){
+            margin: 2%;
+        }
+        } 
+        h3 {
+            font-size: 1rem;
+             }
+        }    
+
+@import "_animations";
+
+.skillsBackground {
+    display: none; 
+}
+
+@media screen and (min-width: 800px) {
+    .mySkills{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skillsBackground {
+        display: block;
+        width: 40%;
+        background-image: url("../img/bg2.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .skills{
+        width: 60%;
+    }
+    
+}
+
+.bar {
+    background: #eae2d6;
+    display: block;
+    height: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #655c53;
+        span {
+        height: 0.5em;
+        float: left;
+        background: #364729;
+        }
+}
+
+//animacje
+
+.html {
+    width: 90%;
+    animation: html 4s;
+}
+
+.css {
+    width: 82%;
+    animation: css 4s;
+}
+
+.javascript {
+    width: 70%;
+    animation: javascript 4s;
+}
+
+.react {
+    width: 69%;
+    animation: react 4s;
+}
+
+.jquery {
+    width: 60%;
+    animation: jquery 4s;
+}
+
+.php {
+    width: 70%;
+    animation: php 4s;
+}
+
+.laravel {
+    width: 65%;
+    animation: laravel 4s;
+}
+
+.ux {
+    width: 70%;
+    animation: ux 4s;
+}
