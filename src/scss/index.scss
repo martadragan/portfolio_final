@@ -51,3 +51,7 @@
 @import "animations";
 @import "projects";
 @import "contact";
+
+html {
+    scroll-behavior: smooth;
+}

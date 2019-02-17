@@ -1,3 +1,13 @@
+//This is how you override Javascript animation
+.bar span [data-aos=fade-right] {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation-delay:1s;
+}
+.bar span [data-aos^=fade][data-aos^=fade].aos-animate{
+    transform: scaleY(1);
+}
+
 .backgroundAbout {
     display: none; 
 }
@@ -126,7 +136,7 @@
         }
 }
 
-//animacje
+// animacje
 
 .html {
     width: 90%;
